@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Bootstrap - Agency Theme</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Kaushan+Script&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons (if needed) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Slab', serif;
+            background-color: #212529;
+            color: #fff;
+        }
+
+        header.masthead {
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1920&auto=format&fit=crop');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .brand {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 1.75rem;
+            color: #ffc800;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar .nav-links li a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links li a:hover {
+            color: #ffc800;
+        }
+
+        /* Hero Section */
+        .masthead-heading {
+            text-align: center;
+            margin: auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .masthead-subheading {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-family: 'Roboto Slab', serif;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .masthead-heading-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        /* Button */
+        .btn-warning {
+            background-color: #ffc800;
+            border-color: #ffc800;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1.25rem 2.25rem;
+            font-size: 1rem;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-warning:hover {
+            background-color: #d9aa00;
+            border-color: #d9aa00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .navbar .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .masthead-heading-main {
+                font-size: 2.5rem;
+            }
+
+            .masthead-subheading {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="masthead">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a class="brand" href="#page-top">Start Bootstrap</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="masthead-heading">
+            <div class="masthead-subheading">Welcome To Our Studio!</div>
+            <div class="masthead-heading-main">It's Nice To Meet You</div>
+            <a class="btn-warning" href="#services">Tell Me More</a>
+        </div>
+        
+        <!-- Bottom spacing filler -->
+        <div></div>
+    </header>
+
+</body>
+</html>
