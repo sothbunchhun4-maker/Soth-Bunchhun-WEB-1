@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding: 0;
+    }
+    .container{
+      display:flex;
+      flex-direction: column;
+      height:100vh;
+      gap:1rem;
+      padding-left:3em;
+      padding-right: 3em;
+    }
+    header{
+        background-color: #1e90ff;
+        border-radius: 0.5rem;
+        color: aliceblue;
+        box-shadow:0 3px 0 #0077ea;
+        font-weight:bold;
+        padding: 20px;
+    }
+    footer{
+        background-color: #4169e1;
+        border-radius: 0.5rem;
+        color: aliceblue;
+        box-shadow:0 3px 0 #1d44b8;
+        font-weight:bold;
+        padding: 20px;
+    }
+    .middle{
+        display: flex;
+        flex-grow: 1;
+        gap:1rem;
+    }
+    .left-section{
+        flex-grow: 1;
+        background-color: #3cb371;
+        border-radius: 0.5rem;
+        padding:1.5rem;
+        color:white;
+        box-shadow:0 3px 0 #2f8d59;
+        font-weight:bold;
+    }
+    .right-section{
+        background-color: #ff6347;
+        border-radius: 0.5rem;
+        padding: 1em;
+        width: 120px;
+        color: aliceblue;
+        box-shadow:0 3px 0  #e02200 ;
+        font-weight:bold;
+        
+    }
+    .items{
+        display:flex;
+        gap:1rem;
+        flex-wrap: wrap;
+    }
+    .item {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2e8b57;
+       border-radius: 0.5rem;
+      font-weight: bold;
+      box-shadow: 0 3px 0 #226b43;
+   }
+
+</style>
+<body>
+ <div class="container">
+   <header>header</header>
+   <div class="middle">
+    <section class="left-section">
+        <h3>main</h3>
+        <div class="items">
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+        </div>
+    </section>
+   <section class="right-section">sidebar</section>
+   </div>
+   <footer>footer</footer>
+   </div>
+   
+    
+</body>
+</html>
